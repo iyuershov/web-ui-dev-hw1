@@ -1,0 +1,43 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+#container {
+	height: 100%;
+}
+
+#sidebar {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 18%;
+	overflow: auto;
+    background-color: #E6EDFF;
+}
+
+#main {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 82%;
+	overflow: auto;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#logo img {
+    margin-right: 10px;
+}
+
+div#sidebar-nav-menu > nav > ul {
+    list-style-type: none;
+}
