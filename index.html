@@ -4,36 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="static/css/main.css">
-
+    <link rel="icon" type="image/x-icon" href="static/images/logo.svg">
+    <script src="https://kit.fontawesome.com/fd853e6140.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id="sidebar">
-            <div id="sidebar-content">
-                <div id="logo">
-                    <h2><img src="static/images/logo.png" align="left">Aeon</h2>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__content">
+                <div class="logo">
+                    <div class="logo__image">
+                        <img src="static/images/logo.svg" alt="Aeon">
+                    </div>
+                    <div class="logo__text">
+                        Aeon
+                    </div>
                 </div>
 
-                <div id="sidebar-nav-menu">
+                <div class="sidebar__nav-menu">
                     <nav>
-                        <ul>
-                            <li>Overview</li>
-                            <li>Product</li>
-                            <li>Orders</li>
-                            <li>Checkout</li>
-                            <li>Setting</li>
-                        </ul>
+                        <a class="sidebar__nav-menu__item" href="#">
+                            <div class="sidebar__nav-menu__item__image">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <div class="sidebar__nav-menu__item__text">
+                                Overview
+                            </div>
+                        </a>
+                        <a class="sidebar__nav-menu__item" href="#">
+                            <div class="sidebar__nav-menu__item__image">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div class="sidebar__nav-menu__item__text">
+                                Product
+                            </div>
+                            <div class="sidebar__nav-menu__item__expand">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </a>
+                        <a class="sidebar__nav-menu__item" href="#">
+                            <div class="sidebar__nav-menu__item__image">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="sidebar__nav-menu__item__text">
+                                Orders
+                            </div>
+                            <div class="sidebar__nav-menu__item__expand">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </a>
+                        <a class="sidebar__nav-menu__item" href="#">
+                            <div class="sidebar__nav-menu__item__image">
+                                <i class="fa-solid fa-receipt"></i>
+                            </div>
+                            <div class="sidebar__nav-menu__item__text">
+                                Checkout
+                            </div>
+                            <div class="sidebar__nav-menu__item__checkout-number">
+                                <i class="fa-solid fa-2"></i>
+                            </div>
+                        </a>
+                        <a class="sidebar__nav-menu__item" href="#">
+                            <div class="sidebar__nav-menu__item__image">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <div class="sidebar__nav-menu__item__text">
+                                Setting
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="sidebar__bottom-menu">
+                    <nav>
+                        <a class="sidebar__bottom-menu__item" href="#">
+                            <div class="sidebar__bottom-menu__item__image">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                            </div>
+                            <div class="sidebar__bottom-menu__item__text">
+                                Help Centre 
+                            </div>
+                        </a>
+                        <a class="sidebar__bottom-menu__item" href="#">
+                            <div class="sidebar__bottom-menu__item__image">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </div>
+                            <div class="sidebar__bottom-menu__item__text">
+                                Contact us
+                            </div>
+                        </a>
+                        <a class="sidebar__bottom-menu__item" id="logout" href="#">
+                            <div class="sidebar__bottom-menu__item__image">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </div>
+                            <div class="sidebar__bottom-menu__item__text">
+                                Log Out
+                            </div>
+                        </a>
                     </nav>
                 </div>
             </div>
         </div><!--
-        --><div id="main">
-            <div id="main-content">MAIN</div>
+        --><div class="main">
+            <div class="main-content">MAIN</div>
         </div>
     </div>
 </body>
