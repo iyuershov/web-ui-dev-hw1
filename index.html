@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="icon" type="image/x-icon" href="static/images/logo.svg">
     <script src="https://kit.fontawesome.com/fd853e6140.js" crossorigin="anonymous"></script>
+
     <title>Dashboard</title>
 </head>
 
@@ -197,6 +198,38 @@
                             <i class="fa-solid fa-arrow-up"></i>
                             7.2 +1.51% this week
                         </div>
+                    </div>
+                </div>
+
+                <div class="charts">
+                    <div class="chart" id="orders-chart">
+                        <div class="chart__header">
+                            <div class="chart__title">
+                                Orders Analytics
+                            </div>
+                            <div class="chart__legend">
+                                <div class="chart__legend__item" id="offline">
+                                    <i class="fa-solid fa-circle icon"></i>
+                                    Offline orders
+                                </div>
+                                <div class="chart__legend__item" id="online">
+                                    <i class="fa-solid fa-circle icon"></i>
+                                    Online orders
+                                </div>
+                                <div class="chart__legend__item" id="date-trunc">
+                                    <select>
+                                        <option value="mon">Monthly</option>
+                                        <option value="daily">Daily</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart__content">
+                            <img src="static/images/orders-chart.svg">
+                        </div>
+                    </div>
+                    <div class="chart" id="earnings-chart">
+
                     </div>
                 </div>
             </div>
