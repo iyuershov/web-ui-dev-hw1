@@ -64,11 +64,11 @@ body {
 }
 
 
-.sidebar__nav-menu {
+.nav-menu {
     margin-bottom: 50px;
 }
 
-.sidebar__nav-menu > nav {
+.nav-menu > nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -77,7 +77,7 @@ body {
     text-align: center;
 }
 
-.sidebar__nav-menu__item {
+.nav-menu__item {
     display: flex;
     flex-direction: row;
     color: #7C8DB5;
@@ -86,12 +86,12 @@ body {
     width: 100%;
 }
 
-.sidebar__nav-menu__item__image {
+.nav-menu__image {
     height: 25px;
     width: 25px;
 }
 
-.sidebar__nav-menu__item__text {
+.nav-menu__text {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
@@ -102,25 +102,41 @@ body {
     width: 60%;
 }
 
-.sidebar__nav-menu__item__expand {
+.nav-menu__expand {
     font-size: 16px;
 }
 
-.sidebar__nav-menu__item__checkout-number {
+.nav-menu__thumb {
+    content: "";
+    visibility: hidden;
+    margin-left: auto;
+    width: 0px;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #347AE2;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+}
+
+#checkout-number {
     font-size: 16px;
     color: #FF3B30;
 }
 
-.sidebar__nav-menu__item:hover {
+.nav-menu__item:hover {
     color: #347AE2;
 }
 
-.sidebar__bottom-menu {
+.nav-menu__item:hover .nav-menu__thumb {
+    visibility: visible;
+}
+
+.bottom-menu {
     margin-top: auto;
     margin-bottom: 50px;
 }
 
-.sidebar__bottom-menu > nav {
+.bottom-menu > nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -129,7 +145,7 @@ body {
     text-align: center;
 }
 
-.sidebar__bottom-menu__item {
+.bottom-menu__item {
     display: flex;
     flex-direction: row;
     color: #7C8DB5;
@@ -139,12 +155,12 @@ body {
     height: 100%;
 }
 
-.sidebar__bottom-menu__item__image {
+.bottom-menu__image {
     height: 25px;
     width: 25px;
 }
 
-.sidebar__bottom-menu__item__text {
+.bottom-menu__text {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
@@ -155,14 +171,30 @@ body {
     width: 60%;
 }
 
-.sidebar__bottom-menu__item:hover {
+.bottom-menu__thumb {
+    content: "";
+    visibility: hidden;
+    margin-left: auto;
+    width: 0px;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #347AE2;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+}
+
+.bottom-menu__item:hover {
     color: #347AE2;
 }
 
-.sidebar__bottom-menu__item#logout {
+.bottom-menu__item:hover .bottom-menu__thumb {
+    visibility: visible;
+}
+
+.bottom-menu__item#logout {
     color: #FF3B30;
 }
 
-.sidebar__bottom-menu__item#logout:hover {
+.bottom-menu__item#logout:hover {
     color: #ad2d26;
 }
