@@ -253,6 +253,7 @@ body {
     font-size: 18px;
     justify-content: center;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .header__menu__item > img {
@@ -269,11 +270,103 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin: auto;
+    color: #000000;
 }
 
 #user-info > .user-info__expand {
     margin: auto;
     margin-left: 15px;
     color: #7C8DB5;
-    ;
+}
+
+.cards {
+    margin-top: 30px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: #E6EDFF;
+    border-width: 1px;
+    border-radius: 12px 12px 12px 12px;
+    padding: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.cards__item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-left-style: solid;
+    border-left-color: #E6EDFF;
+    border-left-width: 1px;
+    padding-left: 40px;
+}
+
+
+.cards__item.first__cards__item {
+    padding-left: 0px;
+    border-left-width: 0px;
+}
+
+.cards__item__number {
+    display: flex;
+    flex-direction: row;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cards__item__number > button {
+    margin-left: auto;
+    margin-right: 10%;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
+    color: #347AE2;
+    font-size: 18px;
+}
+
+.cards__item__number > button:hover {
+    border-style: solid;
+    border-color:#347AE2;
+    border-width: 1px;
+    box-shadow: 0px 0px 12px rgba(124, 141, 181, 0.35);
+}
+
+.cards__item__text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cards__item__subtext {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7C8DB5;
+}
+
+.cards__item__subtext > i {
+    margin-right: 5px;
+}
+
+.cards__item__subtext > .fa-arrow-up {
+    color: #34C759;
+}
+
+.cards__item__subtext > .fa-arrow-down {
+    color: #FF3B30;
 }
