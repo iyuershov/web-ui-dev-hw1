@@ -30,6 +30,12 @@ body {
 	overflow: auto;
 }
 
+.sidebar__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .logo {
     display: flex;
     margin-top: 50px;
@@ -55,6 +61,11 @@ body {
     font-weight: 500;
     line-height: 30px;
     text-align: left;
+}
+
+
+.sidebar__nav-menu {
+    margin-bottom: 50px;
 }
 
 .sidebar__nav-menu > nav {
@@ -102,5 +113,56 @@ body {
 
 .sidebar__nav-menu__item:hover {
     color: #347AE2;
+}
 
+.sidebar__bottom-menu {
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.sidebar__bottom-menu > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    text-align: center;
+}
+
+.sidebar__bottom-menu__item {
+    display: flex;
+    flex-direction: row;
+    color: #7C8DB5;
+    white-space: nowrap;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar__bottom-menu__item__image {
+    height: 25px;
+    width: 25px;
+}
+
+.sidebar__bottom-menu__item__text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 15px;
+    width: 60%;
+}
+
+.sidebar__bottom-menu__item:hover {
+    color: #347AE2;
+}
+
+.sidebar__bottom-menu__item#logout {
+    color: #FF3B30;
+}
+
+.sidebar__bottom-menu__item#logout:hover {
+    color: #ad2d26;
 }
