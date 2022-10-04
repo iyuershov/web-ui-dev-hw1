@@ -219,6 +219,7 @@
                                 <div class="chart__legend__item" id="date-trunc">
                                     <select>
                                         <option value="mon">Monthly</option>
+                                        <option value="week">Weekly</option>
                                         <option value="daily">Daily</option>
                                     </select>
                                 </div>
@@ -250,6 +251,121 @@
                             <div class="chart__legend__item" id="trade">
                                 <i class="fa-solid fa-circle icon"></i>
                                 Trade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="table__title">
+                        <div class="table__title__text">
+                            Order List
+                        </div>
+                        <div class="ttable__title__option" id="date-trunc">
+                            <select>
+                                <option value="mon">Monthly</option>
+                                <option value="week">Weekly</option>
+                                <option value="daily">Daily</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table__content">
+                        <div class="table__header">
+                            <div class="table__header__item short">
+                                No
+                            </div>
+                            <div class="table__header__item with-sort middle">
+                                ID
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item">
+                                Date
+                            </div>
+                            <div class="table__header__item with-sort long">
+                                Customer Name
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item long">
+                                Location
+                            </div>
+                            <div class="table__header__item with-sort">
+                                Amount
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item with-sort">
+                                Status Order
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item middle">
+                                Action
+                            </div>
+                        </div>
+                        <div class="table__data">
+                            <div class="table__row">
+                                <div class="table__row__item short">
+                                    1
+                                </div>
+                                <div class="table__row__item middle">
+                                    #12594
+                                </div>
+                                <div class="table__row__item">
+                                    Dec 1, 2021
+                                </div>
+                                <div class="table__row__item long">
+                                    Frank Murlo
+                                </div>
+                                <div class="table__row__item long">
+                                    312 S Wilmette Ave
+                                </div>
+                                <div class="table__row__item">
+                                    $847.69
+                                </div>
+                                <div class="table__row__item">
+                                    <span class="order-status new">
+                                        <i class="fa-solid fa-circle icon"></i>
+                                        New Order
+                                    </span>
+                                </div>
+                                <div class="table__row__item middle">
+                                    <div class="action__button" onclick="location.href='#';">
+                                        <i class="fa-solid fa-ellipsis icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__row__item short">
+                                    2
+                                </div>
+                                <div class="table__row__item middle">
+                                    #12596
+                                </div>
+                                <div class="table__row__item">
+                                    Oct 4, 2022
+                                </div>
+                                <div class="table__row__item long">
+                                    Ivan Ershov
+                                </div>
+                                <div class="table__row__item long">
+                                    312 S Wilmette Ave
+                                </div>
+                                <div class="table__row__item">
+                                    $6147.00
+                                </div>
+                                <div class="table__row__item">
+                                    <span class="order-status delivery">
+                                        <i class="fa-solid fa-circle icon"></i>
+                                        On delivery
+                                    </span>
+                                </div>
+                                <div class="table__row__item middle">
+                                    <div class="action__button" onclick="location.href='#';">
+                                        <i class="fa-solid fa-ellipsis icon"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
