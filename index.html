@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="icon" type="image/x-icon" href="static/images/logo.svg">
     <script src="https://kit.fontawesome.com/fd853e6140.js" crossorigin="anonymous"></script>
+
     <title>Dashboard</title>
 </head>
 
@@ -30,7 +31,7 @@
                     <nav>
                         <a class="nav-menu__item" href="#">
                             <div class="nav-menu__image">
-                                <i class="fa-solid fa-chart-simple"></i>
+                                <i class="fa-solid fa-chart-simple icon"></i>
                             </div>
                             <div class="nav-menu__text">
                                 Overview
@@ -39,43 +40,43 @@
                         </a>
                         <a class="nav-menu__item" href="#">
                             <div class="nav-menu__image">
-                                <i class="fa-solid fa-bag-shopping"></i>
+                                <i class="fa-solid fa-bag-shopping icon"></i>
                             </div>
                             <div class="nav-menu__text">
                                 Product
                             </div>
                             <div class="nav-menu__expand">
-                                <i class="fa-solid fa-chevron-down"></i>
+                                <i class="fa-solid fa-chevron-down icon"></i>
                             </div>
                             <div class="nav-menu__thumb"></div>
                         </a>
                         <a class="nav-menu__item" href="#">
                             <div class="nav-menu__image">
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-user icon"></i>
                             </div>
                             <div class="nav-menu__text">
                                 Orders
                             </div>
                             <div class="nav-menu__expand">
-                                <i class="fa-solid fa-chevron-down"></i>
+                                <i class="fa-solid fa-chevron-down icon"></i>
                             </div>
                             <div class="nav-menu__thumb"></div>
                         </a>
                         <a class="nav-menu__item" href="#">
                             <div class="nav-menu__image">
-                                <i class="fa-solid fa-receipt"></i>
+                                <i class="fa-solid fa-receipt icon"></i>
                             </div>
                             <div class="nav-menu__text">
                                 Checkout
                             </div>
                             <div id="checkout-number">
-                                <i class="fa-solid fa-2"></i>
+                                <i class="fa-solid fa-2 icon"></i>
                             </div>
                             <div class="nav-menu__thumb"></div>
                         </a>
                         <a class="nav-menu__item" href="#">
                             <div class="nav-menu__image">
-                                <i class="fa-solid fa-gear"></i>
+                                <i class="fa-solid fa-gear icon"></i>
                             </div>
                             <div class="nav-menu__text">
                                 Setting
@@ -89,7 +90,7 @@
                     <nav>
                         <a class="bottom-menu__item" href="#">
                             <div class="bottom-menu__image">
-                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <i class="fa-solid fa-circle-exclamation icon"></i>
                             </div>
                             <div class="bottom-menu__text">
                                 Help Centre 
@@ -98,7 +99,7 @@
                         </a>
                         <a class="bottom-menu__item" href="#">
                             <div class="bottom-menu__image">
-                                <i class="fa-regular fa-comment-dots"></i>
+                                <i class="fa-regular fa-comment-dots icon"></i>
                             </div>
                             <div class="bottom-menu__text">
                                 Contact us
@@ -107,7 +108,7 @@
                         </a>
                         <a class="bottom-menu__item" id="logout" href="#">
                             <div class="bottom-menu__image">
-                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
                             </div>
                             <div class="bottom-menu__text">
                                 Log Out
@@ -117,8 +118,259 @@
                 </div>
             </div>
         </div><!--
-        --><div class="main">
-            <div class="main-content">MAIN</div>
+        --><div class="dashboard">
+            <div class="dashboard__content">
+                <div class="header">
+                    <div class="header__text">
+                        <div class="header__title">
+                            Welcome Back, Marci
+                        </div>
+                        <div class="header__subtitle">
+                            Here is the information about all your orders
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__menu__item">
+                            <i class="fa-solid fa-magnifying-glass icon"></i>
+                        </div>
+                        <div class="header__menu__item">
+                            <i class="fa-regular fa-bell icon"></i>
+                        </div>
+                        <a class="header__menu__item" id="user-info" href="#">
+                            <img src="static/images/avatar.png">
+                            <div class="user-name">Marci  Fumons</div>
+                            <div class="user-info__expand">
+                                <i class="fa-solid fa-chevron-down icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="cards__item first__cards__item">
+                        <div class="cards__item__number">
+                            89,935
+                            <button><i class="fa-solid fa-users icon"></i></button>
+                        </div>
+                        <div class="cards__item__text">
+                            Total users
+                        </div>
+                        <div class="cards__item__subtext">
+                            <i class="fa-solid fa-arrow-up icon"></i>
+                            10.2 +1.01% this week
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__item__number">
+                            23,283.5
+                            <button><i class="fa-solid fa-bag-shopping icon"></i></button>
+                        </div>
+                        <div class="cards__item__text">
+                            Total products
+                        </div>
+                        <div class="cards__item__subtext">
+                            <i class="fa-solid fa-arrow-up icon"></i>
+                            3.1 +0.49% this week
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__item__number">
+                            46,827
+                            <button><i class="fa-regular fa-circle-check icon"></i></button>
+                        </div>
+                        <div class="cards__item__text">
+                            Total users
+                        </div>
+                        <div class="cards__item__subtext">
+                            <i class="fa-solid fa-arrow-down icon"></i>
+                            2.56 -0.91% this week
+                        </div>
+                    </div>
+                    <div class="cards__item">
+                        <div class="cards__item__number">
+                            124,854
+                            <button><i class="fa-solid fa-rotate-left icon"></i></button>
+                        </div>
+                        <div class="cards__item__text">
+                            Refunded
+                        </div>
+                        <div class="cards__item__subtext">
+                            <i class="fa-solid fa-arrow-up icon"></i>
+                            7.2 +1.51% this week
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts">
+                    <div class="chart" id="orders-chart">
+                        <div class="chart__header">
+                            <div class="chart__title">
+                                Orders Analytics
+                            </div>
+                            <div class="chart__legend">
+                                <div class="chart__legend__item" id="offline">
+                                    <i class="fa-solid fa-circle icon"></i>
+                                    Offline orders
+                                </div>
+                                <div class="chart__legend__item" id="online">
+                                    <i class="fa-solid fa-circle icon"></i>
+                                    Online orders
+                                </div>
+                                <div class="chart__legend__item" id="date-trunc">
+                                    <select>
+                                        <option value="mon">Monthly</option>
+                                        <option value="week">Weekly</option>
+                                        <option value="daily">Daily</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart__content">
+                            <img src="static/images/orders-chart.svg">
+                        </div>
+                    </div>
+                    <div class="chart" id="earnings-chart">
+                        <div class="chart__header">
+                            <div class="chart__title">Earnings</div>
+                            <div class="chart__button" onclick="location.href='#';">
+                                <i class="fa-solid fa-ellipsis icon"></i>
+                            </div>
+                        </div>
+                        <div class="chart__content">
+                            <img src="static/images/earnings-chart.svg">
+                        </div>
+                        <div class="chart__legend">
+                            <div class="chart__legend__item" id="offline">
+                                <i class="fa-solid fa-circle icon"></i>
+                                Offline
+                            </div>
+                            <div class="chart__legend__item" id="online">
+                                <i class="fa-solid fa-circle icon"></i>
+                                Online
+                            </div>
+                            <div class="chart__legend__item" id="trade">
+                                <i class="fa-solid fa-circle icon"></i>
+                                Trade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="table__title">
+                        <div class="table__title__text">
+                            Order List
+                        </div>
+                        <div class="ttable__title__option" id="date-trunc">
+                            <select>
+                                <option value="mon">Monthly</option>
+                                <option value="week">Weekly</option>
+                                <option value="daily">Daily</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table__content">
+                        <div class="table__header">
+                            <div class="table__header__item short">
+                                No
+                            </div>
+                            <div class="table__header__item with-sort middle">
+                                ID
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item">
+                                Date
+                            </div>
+                            <div class="table__header__item with-sort long">
+                                Customer Name
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item long">
+                                Location
+                            </div>
+                            <div class="table__header__item with-sort">
+                                Amount
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item with-sort">
+                                Status Order
+                                <button><i class="fa-solid fa-arrow-up-long icon"></i></button>
+                                <button><i class="fa-solid fa-arrow-down-long icon"></i></button>
+                            </div>
+                            <div class="table__header__item middle">
+                                Action
+                            </div>
+                        </div>
+                        <div class="table__data">
+                            <div class="table__row">
+                                <div class="table__row__item short">
+                                    1
+                                </div>
+                                <div class="table__row__item middle">
+                                    #12594
+                                </div>
+                                <div class="table__row__item">
+                                    Dec 1, 2021
+                                </div>
+                                <div class="table__row__item long">
+                                    Frank Murlo
+                                </div>
+                                <div class="table__row__item long">
+                                    312 S Wilmette Ave
+                                </div>
+                                <div class="table__row__item">
+                                    $847.69
+                                </div>
+                                <div class="table__row__item">
+                                    <span class="order-status new">
+                                        <i class="fa-solid fa-circle icon"></i>
+                                        New Order
+                                    </span>
+                                </div>
+                                <div class="table__row__item middle">
+                                    <div class="action__button" onclick="location.href='#';">
+                                        <i class="fa-solid fa-ellipsis icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__row__item short">
+                                    2
+                                </div>
+                                <div class="table__row__item middle">
+                                    #12596
+                                </div>
+                                <div class="table__row__item">
+                                    Oct 4, 2022
+                                </div>
+                                <div class="table__row__item long">
+                                    Ivan Ershov
+                                </div>
+                                <div class="table__row__item long">
+                                    312 S Wilmette Ave
+                                </div>
+                                <div class="table__row__item">
+                                    $6147.00
+                                </div>
+                                <div class="table__row__item">
+                                    <span class="order-status delivery">
+                                        <i class="fa-solid fa-circle icon"></i>
+                                        On delivery
+                                    </span>
+                                </div>
+                                <div class="table__row__item middle">
+                                    <div class="action__button" onclick="location.href='#';">
+                                        <i class="fa-solid fa-ellipsis icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
